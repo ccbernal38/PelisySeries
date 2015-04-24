@@ -1,0 +1,414 @@
+body, section, div, header {
+	display: block;
+}
+aside{
+	display: inline-block;
+}
+body{
+	font: 17px/22px Helvetica, Arial, sans-serif;
+	margin: 0 5%;
+	width: 90%;
+	border: 1px solid;	
+	background-image: url("../img/fondo.jpg");
+}
+body section{
+	background-color: #181818;	
+}
+
+h3{
+	font-size: 17px;
+}
+
+/* Encabezado de la pagina */
+
+.cuenta{
+	margin: 2% auto;
+}
+.cuenta div{
+	display: inline-block;
+	width: 45%;
+}
+.login a{
+	color: white;
+	text-decoration: none;
+	padding: 1% 10%;
+	border-right: 1px solid;
+}
+.search input{
+	float: right;
+	border-radius: 10px;
+	width: 50%;
+}
+.menu img{
+	width: 20%;
+	position: absolute;
+}
+
+.cuenta, .menu{
+	display: inline-block;
+	width: 100%;
+	margin: 2% auto;
+}
+.menu{
+	background-color: #252525;
+}
+.menu nav{
+	width: 60%;
+	display: inline-block;
+	margin-left: 35%;
+}
+.menu nav ul{
+	margin: 0 auto;
+	list-style: none;
+}
+.menu nav ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 0 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	height: 100%;
+	border-right: 1px solid;
+	border-left: 1px solid;
+	-moz-border-right: 1px solid;
+	-moz-border-left: 1px solid;
+	-webkit-border-right: 1px solid;
+	-webki-border-left: 1px solid;
+	margin: 0 0;
+}
+.menu nav ul li:hover{
+	background-color: #303030;
+	color: #348AA7;
+	font-size: 20px;
+}
+.menu nav ul li a:hover{
+	color: #348AA7;
+	text-decoration: none;
+}
+.paginaInactiva a{
+	padding: 0 35%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+.paginaActual{
+	background-color: #505050;
+	font-size: 17px;
+}
+.paginaActual{
+	background-color: #303030;
+	color: #348AA7;
+	
+}
+.paginaActual a{
+	padding: 0 35%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	color: #348AA7;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Cuerpo de la pagina */
+
+/* Panel categorias */
+
+.side1{
+	display: inline-block;
+	width: 20%;
+}
+.categoria{
+	border: 1px #252525 solid;
+	padding: 10%;
+	margin: 5% 10%;
+	background-color: #252525;
+}
+.categoria nav ul{
+	padding-left: 15%;
+}
+.categoria nav ul li{
+	list-style: none;
+	margin: 1% auto;
+}
+.categoria nav ul li a{
+	text-decoration: none;
+	color: white;
+
+}
+
+/* Panel cuerpo pagina */
+.side2{
+	display: inline-block;
+	width: 90%;
+	margin: 1% 5%;
+}
+.destacados{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	background-color: #252525;
+	color: white;
+	font-weight: bold;
+	margin: 1% auto;	
+}
+.vermas{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	background-color: #252525;
+	color: white;
+	font-weight: bold;
+	margin: 1% 0;	
+	width: 19%;	
+	margin-left: 75%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	
+}
+.vermas a{
+	text-decoration: none;
+	color: white;
+}
+.vermas a:hover{
+	color: #348AA7;
+}
+
+.imgPoster{
+	width: 20%;
+	margin: 1% 5%;
+}
+.imgBackdrop{
+	width: 80%;
+	margin: 1% 5%;	
+}
+.imgBackdrop:hover{
+	-webkit-filter: blur(5px);
+}
+
+.destacados{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	background-color: #252525;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+.registrar
+{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	color: white;
+	font-weight: bold;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 1%;
+	margin-bottom: 2%;	
+	width: 30%;	
+	text-align: center;
+	font-size: 17px;
+}
+
+
+.inicioFacebook {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #1379bd;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+.inicioFacebook:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.inicioSesion
+{
+	border-radius: 3px;
+	border-style: solid;
+	border-color: white;
+}
+
+.slideImage{
+
+	width: 60%;
+	padding: 0 20%;
+	border-style: 5px #606060 groove;
+
+}
+
+.formInicio{
+	width: 40%;
+	margin: 0 30%;
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	padding-bottom: 10%;
+}
+.formInicio input{
+	width: 70%;
+	margin: 1% 10%;
+}
+.formInicio input#botonInicioSesion{
+	width: 30%;
+	margin-left: 51%;
+}
+.nombre{
+	color: white;
+	font-weight: bold;
+	margin-left: 4%;
+}
+.imgFb{
+	margin: 0 30%;
+}
+
+.formRegistro{
+	width: 40%;
+	margin: 0 30%;
+	display: inline-block;
+	color: white;
+	padding-bottom: 10%;
+}
+.formRegistro input{
+	width: 40%;
+	margin: 1% 10%;
+	float: right;
+}
+.formRegistro input#botonRegistro{
+	width: 30%;
+	margin-left: 51%;
+}
+.favoritas,
+.divSeriesFav{
+	display: inline-block;
+	width: 40%;
+	margin: auto 3% ;
+	margin-top: 3%;
+
+}
+.image{
+	display: block;
+
+}
+.image img{
+	
+
+}
+.labelNombre{
+	
+}
+.labelNombre h3{
+	color: white;
+	text-align: center;
+
+}
+
+.clsImagen{
+	background: #000;
+	border: solid 1px #222;
+	box-shadow: 0px 0px 10px #222;
+	border-radius: 5px;
+	width: 39%;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	margin: 5%;
+}
+.clsImagen img{
+	border-radius: 5px;
+	width: 100%;
+}
+.clsImagen .clsDescripcion
+{
+	color: white;
+	background: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* colocamos la capa abajo del contenedor (para que no se vea) */
+	top: 250px;
+	/* inicialmente la descripcion va a estar rotada 90 grados*/
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	/* definimos las transiciones */
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
+	/* la opacidad inicial sera cero */
+	opacity: 0;
+	border-radius: 5px;
+}
+.clsImagen .clsDescripcion *{
+	padding: 10px;
+}
+.clsImagen:hover .clsDescripcion{
+	/* rotamos la descripcion a cero grados */
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	/* colocamos su opacidad en 70% */
+	opacity: .7;
+	/* subimos la capa completamente */
+	top: 0;
+}
+
+/** 
+
+
+--------------------------------------------------------------PAGINA SERIES--------------------------------------------------------
+**/
+
+.categoriaSM
+{
+	display: block;
+	width: 30%;
+	margin: 5% 2% 0 2%;
+	background: #252525;	
+	float: left;
+
+}
+.categoriaSM ul
+{
+	list-style: none;
+	padding: 0;
+	margin: auto 10%;
+
+}
+.categoriaSM ul li
+{
+	border-bottom: 1px solid white;
+	border-width: 0 0 0 70%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.categoriaSM ul li a
+{
+	text-decoration: none;
+	color: white;
+}
