@@ -2,4 +2,4 @@
 
 session_start();
 unset($_SESSION['facebook']);
-header('Location: ../../index.php');
+header('Location: ../../../vistas/index.php');

@@ -1,0 +1,30 @@
+#logo{
+	padding: 0px;
+	width: 85%;
+}
+
+.top-buffer{
+	margin-top: 5%;
+}
+body{	
+	background-image: url("../img/fondo.jpg");
+}
+
+.fondo{
+	background-color: #181818
+}
+
+.vermas{
+	
+	background-color: #252525;
+	color: white;
+	font-weight: bold;	
+	margin-bottom: 1%;
+}
+
+.destacados{
+	background-color: #252525;
+	color: white;
+	font-weight: bold;	
+	margin-bottom: 1%;
+}

@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-require 'facebook/config/facebook.php';
-require 'facebook/vendor/autoload.php';
+require '../libs/facebook/config/facebook.php';
+require '../libs/facebook/vendor/autoload.php';
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
@@ -13,7 +13,7 @@ use Facebook\GraphObject;
 use Facebook\FacebookRequestException;
 
 FacebookSession::setDefaultApplication($config['app_id'], $config['app_secret']);
-$helper = new FacebookRedirectLoginHelper('http://localhost/pelisyseries/index.php');
+$helper = new FacebookRedirectLoginHelper('http://localhost/pelisyseries/vistas/index.php');
 
 try {
 	$session = $helper -> getSessionFromRedirect();
