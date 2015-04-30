@@ -16,9 +16,9 @@
 </head>
 <body>	
 	<header id="main-header">
-		<div class="container ">
-			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-				<div class="row ">
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container-fluid ">			
+				<div class="navbar-header ">
 					<div class="col-xs-3 col-xs-offset-1">
 						<a id="logo" class="navbar-brand" >
 							<img  src="../recursos/img/logo.png" class="media-heading img-responsive" alt="PelisySeries">
@@ -53,6 +53,6 @@
 					<?php endif; ?>
 					</div>
 				</div>	
-			</nav>	
+			</div>	
 		</div>		
 	</header><!-- /header -->
