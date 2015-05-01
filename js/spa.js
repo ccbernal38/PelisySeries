@@ -1,16 +1,30 @@
 $(document).ready(function() {
 
-
-
 $('#principal').click(function(event) {
         event.preventDefault();
-        link('index', '.change');
+        link('index', '#contenedor');
     });
 
 $('#registrarse').click(function(event) {
         event.preventDefault();
-        link('registro', '.change');
+        link('', '.change');
     });
+
+$('#login').click(function(event) {
+        event.preventDefault();
+        link('login.php', '#contenedor');
+    });
+
+$('#series').click(function(event) {
+        event.preventDefault();
+        link('infoseries', '#contenedor');
+    });
+
+$('#peliculas').click(function(event) {
+        event.preventDefault();
+        link('login.php', '#contenedor');
+    });
+
 
 });
 
