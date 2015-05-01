@@ -1,6 +1,6 @@
 #logo{
 	padding: 0px;
-	width: 85%;
+	width: 200px;
 }
 
 .top-buffer{
@@ -28,3 +28,14 @@ body{
 	font-weight: bold;	
 	margin-bottom: 1%;
 }
+
+#sectionSlide{
+	height: 30%;
+}
+
+@media (min-width: 768px){ 
+	#logo{
+		width: 300px;
+	}
+}
+	
