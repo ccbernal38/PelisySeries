@@ -32,9 +32,9 @@
                                
 				<div class = "collapse navbar-collapse" id="collapsed">
 					<ul class = "nav nav-pills navbar-right visible-md visible-lg">
-						<li class = "active"><a href = "#">Principal</a></li>
-						<li><a href = "#">Peliculas</a></li>
-						<li><a href = "#">Series</a></li>
+						<li id="principal" class = "active"><a href = "">Principal</a></li>
+						<li><a id="peliculas" href = "">Peliculas</a></li>
+						<li><a id="series" href = "">Series</a></li>
                 	<?php if (!isset($_SESSION['facebook'])): ?>
 						
 						<li>
@@ -63,10 +63,10 @@
                 	<?php if (!isset($_SESSION['facebook'])): ?>
 						
 						<li>
-							<a href="login.php">Login</a>
+							<a id="login" href="">Login</a>
 						</li>
 						<li>
-							<a href="registro.php">Registrarse</a>
+							<a id="registrar" href="">Registrarse</a>
 						</li>
 						
 					<?php else: ?>
