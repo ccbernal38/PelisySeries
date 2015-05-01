@@ -6,12 +6,25 @@
 .top-buffer{
 	margin-top: 5%;
 }
+
+.registrar
+{
+	text-align: center;
+}
 body{	
 	background-image: url("../img/fondo.jpg");
 }
 
+h2
+{
+  color: #337ab7;
+  border-color: #2e6da4;
+}
+
+
 .fondo{
-	background-color: #181818
+	background-color: #181818;
+	background-size:100% 100%;
 }
 
 .vermas{
