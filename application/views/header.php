@@ -12,13 +12,13 @@
 	<script src="<?php echo base_url(); ?>js/basic.js"></script>
 	<script src="<?php echo base_url(); ?>js/spa.js"></script>
 	<?php
-	include '../libs/facebook/app/start.php';
+	include 'application/libraries/facebook/app/start.php';
 	?>
 	<title>Informacion de peliculas y series</title>
 </head>
 <body>	
 
-	<header <i></i>d="main-header">
+	<header id="main-header">
 		<div class = "navbar navbar-default navbar-fixed-top navbar-inverse">
 			<div class = "container">
 				<a id="logo" href = "#" class = "navbar-brand">

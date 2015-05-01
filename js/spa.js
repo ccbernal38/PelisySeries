@@ -17,7 +17,7 @@ $('#login').click(function(event) {
 
 $('#series').click(function(event) {
         event.preventDefault();
-        link('login.php', '#contenedor');
+        link('infoseries', '#contenedor');
     });
 
 $('#peliculas').click(function(event) {

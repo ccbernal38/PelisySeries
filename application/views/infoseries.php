@@ -1,3 +1,4 @@
+<?php include 'header.php';	?>
 <div class="container top-buffer">
 	<section class="main row">
 		<aside class="col-xs-12 col-sm-4 col-md-3">

@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 	}
 
 	public function prueba(){
-		$this->load->view('header');
+		
 		$this->load->view('index');
 	}
 
@@ -33,6 +33,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('registrar');
 	}
+
+	public function infoseries()
+	{
+		
+		$this->load->view('infoseries');
+	}
+
 
 
 }
