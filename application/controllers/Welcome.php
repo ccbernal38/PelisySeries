@@ -28,5 +28,11 @@ class Welcome extends CI_Controller {
 		$this->load->view('index');
 	}
 
+	public function registro()
+	{
+		$this->load->view('header');
+		$this->load->view('registrar');
+	}
+
 
 }

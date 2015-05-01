@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/nuevo.css">
 	<script src="<?php echo base_url(); ?>js/tmdb.js"></script>
 	<script src="<?php echo base_url(); ?>js/basic.js"></script>
+	<script src="<?php echo base_url(); ?>js/spa.js"></script>
 	<?php
 	//include '../libs/facebook/app/start.php';
 	?>
@@ -26,7 +27,7 @@
 					</div>			
 					<div class="col-xs-3 col-xs-offset-1">
 						<ul class="nav nav-pills">
-							<li class="active"><a href="">Principal</a></li>
+							<li class="active"><a href="" id="principal">Principal</a></li>
 							<li><a href="">Peliculas</a></li>
 							<li><a href="">Series</a></li>
 						</ul>
@@ -37,8 +38,8 @@
 							<li>
 								<a href="login.php">Login</a>
 							</li>
-							<li>
-								<a href="registro.php">Registrarse</a>
+							<li >
+								<a  href="registro.php" id="registrarse">Registrarse</a>
 							</li>
 						</ul>
 					<?php else: ?>

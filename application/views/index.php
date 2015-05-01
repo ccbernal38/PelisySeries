@@ -1,5 +1,6 @@
 	<?php //include 'header.php';	?>
 	<script src="<?php echo base_url(); ?>js/principal.js" type="text/javascript"></script>
+	<div class="change">
 	<section class="fondo col-xs-12">
 		<div class="container">
 			<div class="row top-buffer">
@@ -143,6 +144,7 @@
 				</div>
 			</div>
 		</div>
-	</section>		
+	</section>
+	</div>	
 </body>
 </html>

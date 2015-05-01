@@ -1,40 +1,20 @@
-<?php 
-	require_once 'header.php';
-?>
-		<section id="inicioSesion" >
-			<section id="bd">
-				<p class="destacados">Registrarse</p>
-				<form class="formRegistro" action="#" method="POST">
-					<p>
-						<label for="nombre">Nombre: </label>
-						<input id="nombre" type="text">
-					</p>
-					<p>
-						<label for="apellido">Apellido: </label>
-						<input id="apellido" type="text">
-					</p>
-					<p>
-						<label for="correo">E-mail: </label>
-						<input id="correo" type="email">
-					</p>
-					<p>
-						<label for="usuario">Nombre de usuario: </label>
-						<input id="usuario" type="text">
-					</p>
-					<p>
-						<label for="password">Contraseña: </label>
-						<input id="password" type="password">
-					</p>
-					<p>
-						<label for="confirmarPassword">Confirmar contraseña: </label>
-						<input id="confirmarPassword" type="password">
-					</p>
-					<p><input id="botonRegistro" type="submit" value="Registrarse"></p>
-				</form>			
-				
-			</section>
-					
-		</section>
+<?php //include 'header.php';	?>
+<div class="container" >
+			<div class="row">
+			<div class="col-xs-8">
+				<form class="suscribe-form" action="<?php echo site_url('usuario/login') ?>" method="POST">
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="form-group">
+								<label class="sr-only"></label>
+								<input class="form-control"></input>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<button class="btn btn-primary">Registrarse</button>
+						</div>
+					</div>
+				</form>
 
+			</div>		
 	</body>
-</html>
