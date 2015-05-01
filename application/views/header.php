@@ -4,23 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="../recursos/js/jquery-2.1.3.js"></script>
-	<script src="../recursos/js/bootstrap.js"></script>
-	<link rel="stylesheet" href="../recursos/css/bootstrap.css">
-	<link rel="stylesheet" href="../recursos/css/nuevo.css">
-	<script src="../recursos/js/tmdb.js"></script>
-	<script src="../recursos/js/basic.js"></script>
+	<script src="<?php echo base_url(); ?>js/jquery-2.1.3.js"></script>
+	<script src="<?php echo base_url(); ?>js/bootstrap.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/nuevo.css">
+	<script src="<?php echo base_url(); ?>js/tmdb.js"></script>
+	<script src="<?php echo base_url(); ?>js/basic.js"></script>
+	<script src="<?php echo base_url(); ?>js/spa.js"></script>
 	<?php
 	include '../libs/facebook/app/start.php';
 	?>
 	<title>Informacion de peliculas y series</title>
 </head>
 <body>	
+
 	<header <i></i>d="main-header">
 		<div class = "navbar navbar-default navbar-fixed-top navbar-inverse">
 			<div class = "container">
 				<a id="logo" href = "#" class = "navbar-brand">
-					<img  src="../recursos/img/logo.png" class="media-heading img-responsive" alt="PelisySeries">
+					<img  src="<?php echo base_url(); ?>img/logo.png" class="media-heading img-responsive" alt="PelisySeries">
 				</a>
 				<button class = "navbar-toggle" data-toggle = "collapse" data-target = "#collapsed">
 					<span class = "icon-bar"></span>
@@ -42,6 +44,7 @@
 							<a href="registro.php">Registrarse</a>
 						</li>
 						
+
 					<?php else: ?>
 						
 						<li>
