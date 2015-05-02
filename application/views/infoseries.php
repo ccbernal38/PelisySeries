@@ -11,23 +11,29 @@
 				<div class="title1"></div>
 				<a href="">Temporada1</a>
 			</div>
-			<div id="lista top-buffer col-xs-12" >
+			<div id="lista col-xs-12" >
 				<a  href="javascript:void(0);">
 					<i class="glyphicon glyphicon-list"></i>
 					Añadir a mi lista
 				</a>
 			</div>
-			<div id="seguir top-buffer col-xs-12" >
+			<div id="seguir col-xs-12" >
 				<a class="btn-danger" href="javascript:void(0);">Seguir serie</a>
 			</div>
 		</aside>
-		<article class="col-xs-12 col-sm-8 col-md-9 top-buffer ">
-			<div class="title_over">
-				<div class="titles">
-					<div class="titles2">Sinopsis</div>
-					<p class="description">Lorem ipsum dolore</p>
+		<article class="col-xs-12 col-sm-8 col-md-9  ">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Sinopsis</div>
+				<div class="panel-body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
+			
 			
 			<h2>Collapse</h2>
 			<div class="panel-group" id="accordion">
