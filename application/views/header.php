@@ -40,10 +40,10 @@
 						<?php if (!isset($_SESSION['facebook'])): ?>
 
 							<li>
-								<a href="login.php">Login</a>
+								<a id="login" href="">Login</a>
 							</li>
 							<li>
-							<a id="registrarse" href="registro.php">Registrarse</a>
+							<a id="registrarse" href="">Registrarse</a>
 							</li>
 			
 
@@ -52,18 +52,18 @@
 						<?php else: ?>
 
 							<li>
-								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
+								<a  href="" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
-								<a id="cerrarSesion" href="../libraries/facebook/app/logout.php">Cerrar sesión</a>
+								<a id="cerrarSesion" >Cerrar sesión</a>
 							</li>
 
 						<?php endif; ?>
 					</ul>
 					<ul class = "nav navbar-nav navbar-right visible-ms visible-xs">
 						<li class = "active"><a href = "#">Principal</a></li>
-						<li><a href = "#">Peliculas</a></li>
-						<li><a href = "#">Series</a></li>
+						<li><a href = "">Peliculas</a></li>
+						<li><a href = "">Series</a></li>
 
 						<?php if (!isset($_SESSION['facebook'])): ?>
 
@@ -77,10 +77,10 @@
 						<?php else: ?>
 
 							<li>
-								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
+								<a href="" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
-								<a id="cerrarSesion" href="../libs/facebook/app/logout.php">Cerrar sesión</a>
+								<a id="cerrarSesion" >Cerrar sesión</a>
 							</li>
 
 						<?php endif; ?>
