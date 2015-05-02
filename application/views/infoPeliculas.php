@@ -2,7 +2,7 @@
 	<section class="main row">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
 			<div class="portada">
-				<img "<?php echo base_url(); ?>img/Lost.jpg" title="">
+				<img src="<?php echo base_url(); ?>img/prueba.jpg" class="img-responsive" title="">
 			</div>
 			<div class="temporadas">
 				<div class="title1"></div>

@@ -2,12 +2,12 @@
 <div class="container top-buffer">
 	<section class="main row">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
-			<div class="portada col-xs-5 col-xs-offset-1">
-						<a id="logo" class="navbar-brand" >
-							<img  src="<?php echo base_url(); ?>img/Lost.jpg" class="media-heading img-responsive" alt="PelisySeries">
-						</a>
-					</div>			
-			<div class="temporadas">
+			<div class="portada col-xs-12">
+				<a>
+					<img  src="<?php echo base_url(); ?>img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
+				</a>
+			</div>			
+			<div class="temporadas col-xs-12">
 				<div class="title1"></div>
 				<a href="">Temporada1</a>
 			</div>
