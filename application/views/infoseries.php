@@ -1,7 +1,7 @@
-<?php include 'header.php';	?>
 <div class="container top-buffer">
-	<section class="main row">
+	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
+			
 			<div class="portada col-xs-12">
 				<a>
 					<img  src="<?php echo base_url(); ?>img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
@@ -11,17 +11,17 @@
 				<div class="title1"></div>
 				<a href="">Temporada1</a>
 			</div>
-			<div id="lista" >
+			<div id="lista top-buffer col-xs-12" >
 				<a  href="javascript:void(0);">
 					<i class="glyphicon glyphicon-list"></i>
 					Añadir a mi lista
 				</a>
 			</div>
-			<div id="seguir" >
+			<div id="seguir top-buffer col-xs-12" >
 				<a class="btn-danger" href="javascript:void(0);">Seguir serie</a>
 			</div>
 		</aside>
-		<article class="col-xs-12 col-sm-8 col-md-9">
+		<article class="col-xs-12 col-sm-8 col-md-9 top-buffer ">
 			<div class="title_over">
 				<div class="titles">
 					<div class="titles2">Sinopsis</div>
@@ -74,7 +74,7 @@
 
 				<div class="row">
 					<div class="col-md-3 col-md-offset-5">
-						<iframe class="embed-responsive-item" width="420" height="345" src="https://www.youtube.com/embed/Y66j_BUCBMY" frameborder="0" allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" width="400" height="300" src="https://www.youtube.com/embed/Y66j_BUCBMY" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

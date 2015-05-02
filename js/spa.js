@@ -7,7 +7,7 @@ $('#principal').click(function(event) {
 
 $('#registrarse').click(function(event) {
         event.preventDefault();
-        link('', '.change');
+        link('index.php/welcome/registro', '#contenedor');
     });
 
 $('#login').click(function(event) {
@@ -18,7 +18,9 @@ $('#login').click(function(event) {
 
 $('#series').click(function(event) {
         event.preventDefault();
+
         link('index.php/welcome/infoseries', '#contenedor');
+
     });
 
 $('#peliculas').click(function(event) {
