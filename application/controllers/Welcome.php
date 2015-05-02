@@ -23,11 +23,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('index');
 	}
 
-	public function prueba(){
-		
-		$this->load->view('index');
-	}
-
 	public function registro()
 	{
 		$this->load->view('registrar');
@@ -35,13 +30,23 @@ class Welcome extends CI_Controller {
 
 	public function infoseries()
 	{
-		
-		$this->load->view('infoseries.php');
+		$this->load->view('infoSeries');
 	}
 
 	public function login()
 	{
-		$this->load->view('login.php');
+		$this->load->view('login');
+		//$this->load->view('login.php');
+	}
+
+	public function infoPeliculas()
+	{
+		$this->load->view('infoPeliculas');
+	}
+
+	public function cerrarSesion()
+	{
+		$this->load->view('../libraries/facebook/app/logout.php');
 	}
 
 

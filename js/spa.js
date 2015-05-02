@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 $('#principal').click(function(event) {
         event.preventDefault();
-        link('index', '#contenedor');
+        link('index.php/welcome/index', '#contenedor');
     });
 
 $('#registrarse').click(function(event) {
@@ -13,18 +13,22 @@ $('#registrarse').click(function(event) {
 $('#login').click(function(event) {
         event.preventDefault();
         link('index.php/welcome/login', '#contenedor');
+
     });
 
 $('#series').click(function(event) {
         event.preventDefault();
-        link('welcome/infoseries', '#contenedor');
+        link('index.php/welcome/infoseries', '#contenedor');
     });
 
 $('#peliculas').click(function(event) {
         event.preventDefault();
-        link('welcome/infopeliculas', '#contenedor');
+        link('index.php/welcome/infoPeliculas', '#contenedor');
     });
-
+$('#cerrarSesion').click(function(event) {
+        event.preventDefault();
+        link('index.php/welcome/cerrarSesion', '#contenedor');
+    });
 
 });
 

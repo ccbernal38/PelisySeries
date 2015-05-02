@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 require 'application/libraries/facebook/config/facebook.php';
 require 'application/libraries/facebook/vendor/autoload.php';

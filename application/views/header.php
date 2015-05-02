@@ -52,7 +52,7 @@
 								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
-								<a href="../libs/facebook/app/logout.php">Cerrar sesión</a>
+								<a id="cerrarSesion" href="../libraries/facebook/app/logout.php">Cerrar sesión</a>
 							</li>
 							
 						<?php endif; ?>
@@ -77,7 +77,7 @@
 								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
-								<a href="../libs/facebook/app/logout.php">Cerrar sesión</a>
+								<a id="cerrarSesion" href="../libs/facebook/app/logout.php">Cerrar sesión</a>
 							</li>
 							
 						<?php endif; ?>
