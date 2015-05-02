@@ -11,6 +11,7 @@
 	<script src="<?php echo base_url(); ?>js/tmdb.js"></script>
 	<script src="<?php echo base_url(); ?>js/basic.js"></script>
 	<script src="<?php echo base_url(); ?>js/spa.js"></script>
+	<script src="<?php echo base_url(); ?>js/jqueryvalidation.js"></script>
 	<?php
 	include 'application/libraries/facebook/app/start.php';
 	?>
