@@ -35,6 +35,7 @@
 						<li id="principal" class = "active"><a href = "">Principal</a></li>
 						<li><a id="peliculas" href = "">Peliculas</a></li>
 						<li><a id="series" href = "">Series</a></li>
+
 						<?php if (!isset($_SESSION['facebook'])): ?>
 
 							<li>
@@ -43,6 +44,8 @@
 							<li>
 							<a id="registrarse" href="registro.php">Registrarse</a>
 							</li>
+			
+
 
 
 						<?php else: ?>
@@ -60,6 +63,7 @@
 						<li class = "active"><a href = "#">Principal</a></li>
 						<li><a href = "#">Peliculas</a></li>
 						<li><a href = "#">Series</a></li>
+
 						<?php if (!isset($_SESSION['facebook'])): ?>
 
 							<li>
@@ -80,6 +84,7 @@
 
 						<?php endif; ?>
 					</ul>
+
 				</div>
 			</div>
 		</div>

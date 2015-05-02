@@ -1,6 +1,7 @@
 <div class="container top-buffer">
 	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
+<<<<<<< HEAD
 			
 			<div class=" portada">
 						<a id="logo" class="navbar-brand" >
@@ -8,6 +9,14 @@
 						</a>
 					</div>			
 			<div class="temporadas top-buffer">
+=======
+			<div class="portada col-xs-12">
+				<a>
+					<img  src="<?php echo base_url(); ?>img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
+				</a>
+			</div>			
+			<div class="temporadas col-xs-12">
+>>>>>>> origin/master
 				<div class="title1"></div>
 				<a href="">Temporada1</a>
 			</div>

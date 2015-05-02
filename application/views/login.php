@@ -1,6 +1,4 @@
-<?php 
-	require_once 'header.php';
-?>
+
 		<section id="inicioSesion" >
 			<section id="fb">
 				<p class="destacados">Inicio de sesi&oacuten</p>

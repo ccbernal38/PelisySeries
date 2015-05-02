@@ -12,17 +12,17 @@ $('#registrarse').click(function(event) {
 
 $('#login').click(function(event) {
         event.preventDefault();
-        link('login.php', '#contenedor');
+        link('index.php/welcome/login', '#contenedor');
     });
 
 $('#series').click(function(event) {
         event.preventDefault();
-        link('infoseries', '#contenedor');
+        link('welcome/infoseries', '#contenedor');
     });
 
 $('#peliculas').click(function(event) {
         event.preventDefault();
-        link('login.php', '#contenedor');
+        link('welcome/infopeliculas', '#contenedor');
     });
 
 
