@@ -38,10 +38,10 @@
                 	<?php if (!isset($_SESSION['facebook'])): ?>
 						
 						<li>
-							<a href="login.php">Login</a>
+							<a id="login" href="">Login</a>
 						</li>
 						<li>
-							<a href="registro.php">Registrarse</a>
+							<a id="registro" href="">Registrarse</a>
 						</li>
 						
 
@@ -66,7 +66,7 @@
 							<a id="login" href="">Login</a>
 						</li>
 						<li>
-							<a id="registrar" href="">Registrarse</a>
+							<a id="registro" href="">Registrarse</a>
 						</li>
 						
 					<?php else: ?>
