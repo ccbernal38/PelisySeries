@@ -4,20 +4,20 @@
 $(function(){
 $("#formRegister").validate({
         rules: {
-            nombre: { required: true, minlength: 2},
-            apellido: { required: true, minlength: 2},
-            correo: { required:true, email: true},
-            usuario: { minlength: 2, maxlength: 15},
-            pwd: { required: true},
-            pwd2: { required:true, minlength: 2}
+            name: { required: true, minlength: 2},
+            lastname: { required: true, minlength: 2},
+            email: { required:true, email: true},
+            username: { minlength: 2, maxlength: 15},
+            pwd: { required: true, minlength: 6},
+            pwd2: { required:true, equalTo: "#pwd"}
         },
         messages: {
-            nombre: "Debe introducir su nombre.",
-            apellido: "Debe introducir su apellido.",
-            correo : "Debe introducir un email válido.",
-            usuario : "El nombre de usuario no es valido",
-            pwd : "Debe introducir solo números.",
-            pwd2 : "Debe repetir la contraseña",
+            name: "Debe introducir su nombre.",
+            lastname: "Debe introducir su apellido.",
+            email : "Debe introducir un email válido.",
+            username : "El nombre de usuario no es valido",
+            pwd : "Ingrese una contraseña valida (minimo 6 caracteres)",
+            pwd2 : "la contraseña no coincide",
         }
     });
 });
@@ -26,26 +26,26 @@ $("#formRegister").validate({
 <div class="row">
 <div class="col-md-10 col-md-offset-1">
   <h2>Registrarse</h2>
-  <form role="form" id="formRegister" method="POST" action="">
+  <form role="form" id="formRegister" method="POST" action="../user/registration">
     <div class="form-group">
-      <label for="nombre" class="label">Nombre:</label>
-      <input type="text" class="form-control" name="nombre" placeholder="Ingresa tu nombre">
+      <label for="name" class="label">Nombre:</label>
+      <input type="text" id="name"class="form-control" name="name" placeholder="Ingresa tu nombre">
     </div>
     <div class="form-group">
-      <label for="apellido" class="label">Apellido:</label>
-      <input type="text" class="form-control" name="apellido" placeholder="Ingresa tu apellido">
+      <label for="lastname" class="label">Apellido:</label>
+      <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Ingresa tu apellido">
     </div>
     <div class="form-group">
-      <label for="correo" class="label">Correo:</label>
-      <input type="email" class="form-control" name="correo" placeholder="Ingresa tu correo">
+      <label for="email" class="label">Correo:</label>
+      <input type="email" id="email" class="form-control" name="email" placeholder="Ingresa tu correo">
     </div>
     <div class="form-group">
-      <label for="usuario" class="label">Usuario:</label>
-      <input type="text" class="form-control" name="usuario" placeholder="Ingresa tu usuario">
+      <label for="username" class="label">Usuario:</label>
+      <input type="text" id="username" class="form-control" name="username" placeholder="Ingresa tu usuario">
     </div>
     <div class="form-group">
       <label for="pwd" class="label">Password:</label>
-      <input type="password" class="form-control" name="pwd" placeholder="Ingresa tu password">
+      <input type="password" id="pwd" class="form-control" name="pwd" placeholder="Ingresa tu password">
     </div>
      <div class="form-group">
       <label for="pwd2" class="label">Repite la contraseña:</label>

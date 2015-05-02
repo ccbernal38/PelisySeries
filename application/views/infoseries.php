@@ -12,14 +12,12 @@
 				<a href="">Temporada1</a>
 			</div>
 			<div id="lista col-xs-12" >
-				<a  href="javascript:void(0);">
-					<i class="glyphicon glyphicon-list"></i>
+				<a  class="btn-danger" href="javascript:void(0);">
+					<i class="btn-danger glyphicon glyphicon-list"></i>
 					Añadir a mi lista
 				</a>
 			</div>
-			<div id="seguir col-xs-12" >
-				<a class="btn-danger" href="javascript:void(0);">Seguir serie</a>
-			</div>
+			
 		</aside>
 		<article class="col-xs-12 col-sm-8 col-md-9  ">
 			<div class="panel panel-primary">

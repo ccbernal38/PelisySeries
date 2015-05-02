@@ -30,7 +30,12 @@ class Welcome extends CI_Controller {
 
 	public function infoseries()
 	{
-		$this->load->view('infoSeries');
+		$this->load->view('infoseries');
+	}
+
+	public function listaFavoritos()
+	{
+		$this->load->view('listaFavoritos');
 	}
 
 	public function login()

@@ -12,6 +12,13 @@
 	text-align: center;
 }
 
+.carousel-control {
+  padding-top:15%;
+  width:6%;
+}
+
+
+
 
 body{	
 	background-image: url("../img/fondo.jpg");
