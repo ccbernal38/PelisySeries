@@ -1,27 +1,27 @@
-<?php include 'header.php';	?>
 <div class="container top-buffer">
-	<section class="main row">
+	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
-			<div class="portada col-xs-5 col-xs-offset-1">
+			
+			<div class=" portada">
 						<a id="logo" class="navbar-brand" >
 							<img  src="<?php echo base_url(); ?>img/Lost.jpg" class="media-heading img-responsive" alt="PelisySeries">
 						</a>
 					</div>			
-			<div class="temporadas">
+			<div class="temporadas top-buffer">
 				<div class="title1"></div>
 				<a href="">Temporada1</a>
 			</div>
-			<div id="lista" >
+			<div id="lista top-buffer" >
 				<a  href="javascript:void(0);">
 					<i class="glyphicon glyphicon-list"></i>
 					Añadir a mi lista
 				</a>
 			</div>
-			<div id="seguir" >
+			<div id="seguir top-buffer" >
 				<a class="btn-danger" href="javascript:void(0);">Seguir serie</a>
 			</div>
 		</aside>
-		<article class="col-xs-12 col-sm-8 col-md-9">
+		<article class="col-xs-12 col-sm-8 col-md-9 top-buffer ">
 			<div class="title_over">
 				<div class="titles">
 					<div class="titles2">Sinopsis</div>

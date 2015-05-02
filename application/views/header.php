@@ -29,31 +29,31 @@
 					<span class = "icon-bar"></span>
 					<span class = "icon-bar"></span>
 				</button>
-				
+
 				<div class = "collapse navbar-collapse" id="collapsed">
 					<ul class = "nav nav-pills navbar-right visible-md visible-lg">
 						<li id="principal" class = "active"><a href = "">Principal</a></li>
 						<li><a id="peliculas" href = "">Peliculas</a></li>
 						<li><a id="series" href = "">Series</a></li>
 						<?php if (!isset($_SESSION['facebook'])): ?>
-							
+
 							<li>
 								<a href="login.php">Login</a>
 							</li>
 							<li>
-								<a href="registro.php">Registrarse</a>
+							<a id="registrarse" href="registro.php">Registrarse</a>
 							</li>
-							
+
 
 						<?php else: ?>
-							
+
 							<li>
 								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
 								<a href="../libs/facebook/app/logout.php">Cerrar sesión</a>
 							</li>
-							
+
 						<?php endif; ?>
 					</ul>
 					<ul class = "nav navbar-nav navbar-right visible-ms visible-xs">
@@ -61,23 +61,23 @@
 						<li><a href = "#">Peliculas</a></li>
 						<li><a href = "#">Series</a></li>
 						<?php if (!isset($_SESSION['facebook'])): ?>
-							
+
 							<li>
 								<a id="login" href="">Login</a>
 							</li>
 							<li>
 								<a id="registrar" href="">Registrarse</a>
 							</li>
-							
+
 						<?php else: ?>
-							
+
 							<li>
 								<a href="#" class="btn-success" title=""><?php echo $facebook_user->getName();?></a>								
 							</li>
 							<li>
 								<a href="../libs/facebook/app/logout.php">Cerrar sesión</a>
 							</li>
-							
+
 						<?php endif; ?>
 					</ul>
 				</div>

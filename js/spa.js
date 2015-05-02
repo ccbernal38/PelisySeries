@@ -7,7 +7,7 @@ $('#principal').click(function(event) {
 
 $('#registrarse').click(function(event) {
         event.preventDefault();
-        link('', '.change');
+        link('registro', '#contenedor');
     });
 
 $('#login').click(function(event) {
