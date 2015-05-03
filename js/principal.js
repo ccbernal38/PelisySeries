@@ -51,7 +51,8 @@ function principal(){
 	   		if(e.results[i].backdrop_path != null)
 	   		{
 	   			$("#fav"+j).find("a").attr("id",e.results[i].id);
-		   		$("#fav"+j).find("a").attr("href","infoSeries.php?id="+e.results[i].id);
+		   //		$("#fav"+j).find("a").attr("href","infoSeries.php?id="+e.results[i].id);
+		   		$("#fav"+j).find("a").attr("onclick","DetalleTv"+"("+""+e.results[i].id+")");
 	   			$("#fav"+j).find("img").attr("src", tmdb.images_uri+tmdb.size+e.results[i].backdrop_path );	
 	   			$("#fav"+j).find("img").attr("class", "img-responsive" );	
 	   			$("#fav"+j).find("h3").text(e.results[i].original_name);
@@ -79,7 +80,8 @@ function principal(){
 		j=1;
 	   	for (var i = 0; j < 4; i++) {
 	   		$("#pelis"+j).find("a").attr("id",e.results[i].id);
-	   		$("#pelis"+j).find("a").attr("href","infoSeries.php?id="+e.results[i].id);
+	   		$("#pelis"+j).find("a").attr("onclick","DetallePeli"+"("+""+e.results[i].id+")");
+	   		//$("#pelis"+j).find("a").attr("href","infoSeries.php?id="+e.results[i].id);
    			$("#pelis"+j).find("img").attr("src", tmdb.images_uri+tmdb.size+e.results[i].poster_path);	
    			$("#pelis"+j).find("img").attr("class", "img-responsive" );	
    			$("#pelis"+j).find("h3").text(e.results[i].title);
@@ -105,7 +107,8 @@ function principal(){
 	   	j=1;
 	   	for (var i = 0; j < 4; i++) {
 	   		$("#serie"+j).find("a").attr("id",e.results[i].id);
-	   		$("#serie"+j).find("a").attr("href","infoserie.php?id="+e.results[i].id);
+	   		$("#pelis"+j).find("a").attr("onclick","DetalleSerie"+"("+""+e.results[i].id+")");
+	   		//$("#serie"+j).find("a").attr("href","infoserie.php?id="+e.results[i].id);
    			$("#serie"+j).find("img").attr("src", tmdb.images_uri+tmdb.size+e.results[i].poster_path);	
    			$("#serie"+j).find("img").attr("class", "img-responsive" );	
    			$("#serie"+j).find("h3").text(e.results[i].original_name);
@@ -119,4 +122,9 @@ function principal(){
 	);
 
 	
+}
+
+function DetalleTv(id)
+{
+	tmdb.call("/find",)
 }
