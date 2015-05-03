@@ -2,9 +2,14 @@
 	padding: 0px;
 	width: 200px;
 }
-
+#login.container>*{
+	color: white;
+}
 .top-buffer{
 	margin-top: 5%;
+}
+.bottom-buffer{
+	margin-bottom: 5%;
 }
 
 .registrar

@@ -27,7 +27,6 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('registrar');
 	}
-
 	public function infoseries()
 	{
 		$this->load->view('infoseries');
@@ -38,10 +37,9 @@ class Welcome extends CI_Controller {
 		$this->load->view('listaFavoritos');
 	}
 
-	public function login()
+	public function inicioSesion()
 	{
 		$this->load->view('login');
-		//$this->load->view('login.php');
 	}
 
 	public function infoPeliculas()

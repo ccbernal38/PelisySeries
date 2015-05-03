@@ -1,9 +1,10 @@
 	<?php include 'header.php';	?>
-	<script src="<?php echo base_url(); ?>js/principal.js" type="text/javascript"></script>
+	
 	
 	<section class="fondo col-xs-12">
 
 		<div id="contenedor" class="container">
+		
 
 			<div class="row top-buffer">
 				<section id="sectionSlide" class="col-md-8 col-md-offset-2 col-xs-12 ">

@@ -77,10 +77,8 @@ function mouseOutImage(img){
 var imagenes = ""; 
 function changeImage()
 {
-	if(document.getElementById('slide')){
-		var imagen = document.getElementById('slide');
-		imagenes = imagen;
-		imagen.setAttribute( "src", listImg[imageIndex]);
+	if($("#slide")){
+		$("#slide").attr("src", listImg[imageIndex]);
 		imageIndex++;
 		if(imageIndex >= listImg.length)
 		{
@@ -91,6 +89,3 @@ function changeImage()
 }
 
 var intervalo =  setInterval(changeImage, 4000);
-imagen.onClic = function(){
-	clearInterval(intervalo);
-};

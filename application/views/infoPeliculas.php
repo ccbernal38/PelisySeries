@@ -71,7 +71,7 @@
 
 				<div class="row">
 					<div class="col-md-3 col-md-offset-5">
-						<iframe class="embed-responsive-item" width="420" height="345" src="https://www.youtube.com/embed/Y66j_BUCBMY" frameborder="0" allowfullscreen></iframe>
+						
 				</div>
 			</div>
 		</div>

@@ -14,13 +14,10 @@ function principal(){
 	},
 	function(e){
 	   	console.log("Success: "+e)
-	   	var seccionSlider = document.getElementById("sectionSlide");  	
-	   	var imgS = document.createElement("img");
-	   	imgS.setAttribute("src", tmdb.images_uri+"/w780"+e.results[3].backdrop_path);
-	   	imgS.setAttribute("class", "img-responsive");
-	   	imgS.setAttribute("id", "slide");
-	   	seccionSlider.appendChild(imgS);
-
+	   	$('#sectionSlide').append("<img></img>");
+	   	$('#sectionSlide').find("img").attr("src", tmdb.images_uri+"/w780"+e.results[3].backdrop_path);
+	   	$('#sectionSlide').find("img").attr("class", "img-responsive");
+	   	$('#sectionSlide').find("img").attr("id", "slide");
 	   	for (var i = 0; i < 5; i++) 
 	   	{
 	   		if(!e.results[i+3].backdrop_path != null)
