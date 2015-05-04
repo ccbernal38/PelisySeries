@@ -9,7 +9,7 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
             event.preventDefault();
-            link('vistas/index.php', '#contenedor');
+            link('vistas/principal.php', '#contenedor');
         });
 
     $('#registrarse').click(function(event) {
@@ -70,7 +70,7 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
             event.preventDefault();
-            link('views/perfil.php', '#contenedor');
+            link('vistas/perfil.php', '#contenedor');
         });
 
     $('#cerrarSesion').click(function(event) {
@@ -82,6 +82,14 @@ $(document).ready(function()
             $('#perfil').removeClass("active");
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
+        });
+    $('#fav1').click(function(event) {
+           try{
+           
+            
+        }catch(e){
+            console.log(e);
+        }
         });
 });
 

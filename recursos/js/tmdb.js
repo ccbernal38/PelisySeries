@@ -64,16 +64,7 @@ function mouseInImage(img){
 	}
 
 	);
-
-	
-
 }
-
-function mouseOutImage(img){
-	console.log(img.id);
-
-}
-
 var imagenes = ""; 
 function changeImage()
 {
@@ -85,7 +76,30 @@ function changeImage()
 			imageIndex = 0;
 		}
 	}
-	
 }
 
 var intervalo =  setInterval(changeImage, 4000);
+
+function DetalleTv(id)
+{ 
+	event.preventDefault();
+    link('vistas/infoseries.php', '#contenedor');
+    tmdb.call("/tv/"+id, 
+	{
+		"page":1,
+		"language": "es"
+	},
+	function(e){
+        $('#posterTV').find("img").attr("src",tmdb.images_uri+"/w342"+e.poster_path);
+        $('#tituloTV').find("h3").text(e.name);
+	}, 
+	function(e){
+		console.log("Error: "+e)
+	}
+	);
+}
+
+function spa(vista)
+{
+    
+}

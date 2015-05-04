@@ -38,7 +38,6 @@ function principal(){
 		"page":1,
 		"language": "es",
 		"sort_by": "popularity.desc",
-		
 		include_adult: false
 	},
 	function(e){
@@ -49,13 +48,12 @@ function principal(){
 	   		{
 	   			$("#fav"+j).find("a").attr("id",e.results[i].id);
 		   		$("#fav"+j).find("a").attr("href","");
-		   		$("#fav"+j).find("a").attr("onclick","DetalleTv"+"("+""+e.results[i].id+")");
+		   		$("#fav"+j).find("a").attr("onclick","DetalleTv"+"(this.id)");
 	   			$("#fav"+j).find("img").attr("src", tmdb.images_uri+tmdb.size+e.results[i].backdrop_path );	
 	   			$("#fav"+j).find("img").attr("class", "img-responsive" );	
 	   			$("#fav"+j).find("h3").text(e.results[i].original_name);
 	   			$("#fav"+j).find("p").text(e.results[i].original_name);
 	   			j++;
-	   			
 	   		}	   			   		
    		};	   	
 	}, 
@@ -104,8 +102,8 @@ function principal(){
 	   	j=1;
 	   	for (var i = 0; j < 4; i++) {
 	   		$("#serie"+j).find("a").attr("id",e.results[i].id);
-	   		$("#pelis"+j).find("a").attr("onclick","DetalleSerie"+"("+""+e.results[i].id+")");
-	   		//$("#serie"+j).find("a").attr("href","infoserie.php?id="+e.results[i].id);
+	   		$("#pelis"+j).find("a").attr("onclick","detalleSerie"+"(this.id)");
+	   		$("#serie"+j).find("a").attr("href","");
    			$("#serie"+j).find("img").attr("src", tmdb.images_uri+tmdb.size+e.results[i].poster_path);	
    			$("#serie"+j).find("img").attr("class", "img-responsive" );	
    			$("#serie"+j).find("h3").text(e.results[i].original_name);
@@ -121,20 +119,3 @@ function principal(){
 	
 }
 
-function DetalleTv(id)
-{
-	tmdb.call("/tv/"+id, 
-	{
-		"page":1,
-		"language": "es"
-	},
-	function(e){
-        link("vistas/infoseries.php", '#contenedor');
-        $('#posterTV').find("img").attr("src",tmdb.images_uri+tmdb.size+e.poster_path);
-        $('#tituloTV').find("h3").text(e.name);
-	}, 
-	function(e){
-		console.log("Error: "+e)
-	}
-	);
-}
