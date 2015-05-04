@@ -1,7 +1,7 @@
 <?php
-session_start();
-require('libs/facebook/config/facebook.php');
-require('libs/facebook/vendor/autoload.php');
+
+require('/libs/facebook/config/facebook.php');
+require('/libs/facebook/vendor/autoload.php');
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
@@ -12,16 +12,18 @@ use Facebook\GraphObject;
 use Facebook\FacebookRequestException;
 
 FacebookSession::setDefaultApplication($config['app_id'], $config['app_secret']);
-$helper = new FacebookRedirectLoginHelper('http://localhost/pelisyseries2/index.php');
+$helper = new FacebookRedirectLoginHelper('http://localhost/pelisyseries/index.php');
 
 try {
 	$session = $helper -> getSessionFromRedirect();
 
-	if ($session):
+	if ($session)
+	{
 		$_SESSION['facebook'] = $session->getToken();
-		header('Location: vistas/index.php');
+		header("Location: index.php");
+	}
 
-	endif;
+	
 
 	if(isset($_SESSION['facebook'])):
 		$session = new FacebookSession($_SESSION['facebook']);
@@ -31,16 +33,15 @@ try {
 		$graphObjectClass = $response->getGraphObject(GraphUser::className());
 
 		$facebook_user = $graphObjectClass;
-
 	endif;
  	
  	
  	
 
 } catch (FacebookRequestException $ex) {
-	//cuando facebook retorna un error
-}catch (\Exception $ex){
+	
+}catch (Exception $ex){
 	//cuando falla la validación o los usos locales 
-
+	
 }
 ?>

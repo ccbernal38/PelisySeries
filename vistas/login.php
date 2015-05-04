@@ -1,4 +1,4 @@
-<?php include "../libs/facebook/app/start.php" ?>
+
 <div id="login" class="container top-buffer bottom-buffer">
 	<section class="col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
 		<h1>Inicio de Sesion</h1>
@@ -27,8 +27,7 @@
 		<div class="col-md-12 col-xs-12 top-buffer bottom-buffer">
 			<h3>Registrate / Inicia Sesion con tu Red Social</h3>
 			<div class="col-md-8 col-xs-8 col-md-offset-1 col-xs-offset-1">
-				<?php echo $helper->getLoginUrl($config['scopes']);?>
-				<a href="<?php echo $helper->getLoginUrl($config['scopes']);?>">
+				<a href="<?php echo $_COOKIE['fb'] ?>">
 					<input id="fb" class="imgFb" type="image"src="recursos/img/fb.png" type="padding-left: 0px;"></input>
 				</a>
 			</div>

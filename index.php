@@ -10,9 +10,10 @@ class FrontController
 
 	public function index()
 	{
-		$url = $_SERVER["REQUEST_URI"];
-		$path = trim(parse_url($url, PHP_URL_PATH), "/");
+		//$url = $_SERVER["REQUEST_URI"];
+		//$path = trim(parse_url($url, PHP_URL_PATH), "/");
 		try{
+		/*
 			@list($appname, $control, $metodo, $params) = explode("/", $path, 4);
 			@$params = (explode('/', $params));
 			//se utiliza el metodo creado anteriormente
@@ -30,30 +31,25 @@ class FrontController
 				$micontrolador = $this -> cargarControlador($control);	
 			}
 
-			
+		*/
+			$micontrolador = $this -> cargarControlador($this->controlador);
 			//asumimos que este metodo existe pues aun no ha sido creado
-
+			/*
 			if(!is_null($params) && !is_null($micontrolador))
 			{
 				$micontrolador->setParametros($params);	
 			}
-			
+			*/
 			//creamos una variable para almacenar el nombre
 			//del metod de manera temporal
-			if($metodo != null)
-			{
-				$stringMetodo  = $metodo;	
-			}
-			else
-			{
-				$stringMetodo = $this->metodo;
-			}
+			$stringMetodo = $this->metodo;
+
 			
 			//ejecutamos el metodo desde el controlador
-			if(!is_null($micontrolador))
-			{
+			//if(!is_null($micontrolador))
+			//{
 				$micontrolador->$stringMetodo();	
-			}
+			//}
 			
 
 		}	

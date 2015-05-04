@@ -1,4 +1,4 @@
-<section class="side2" id="contenedor" onLoad="series()">
+<section class="side2" id="contenedor">
 	<section class="imagen">
 		<section id="sectionSlide">
 

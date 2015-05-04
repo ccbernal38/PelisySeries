@@ -1,6 +1,3 @@
-<?php
-	require('libs/facebook/app/start.php');
-	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +12,10 @@
 	<script src="recursos/js/spa.js" async></script>
 	<script src="recursos/js/jqueryvalidation.js"></script>
 	<script src="recursos/js/principal.js" type="text/javascript"></script>
+	<?php 
+		session_start();
+		include('/libs/facebook/app/start.php'); 
+	?>
 	<title>Informacion de peliculas y series</title>
 </head>
 <body>	
@@ -60,3 +61,4 @@
 			</div>
 		</div>
 	</header>
+	<section class="fondo col-xs-12">
