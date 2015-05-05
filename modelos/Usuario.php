@@ -34,14 +34,11 @@ class Usuario extends Modelo
 
 	function borrarUsuario($where){
 		//delete
-		//$where = array('nombre' => "christian" );
 		$this->delete($where);
-		//return $this->select();	
 	}
 
 	function actualizarUsuario(){
 		//update
-
 		$this->update($campos, $where);
 	}
 
@@ -55,23 +52,6 @@ class Usuario extends Modelo
 	{
 		//select
 		return $this->select();
-
-		
-		//$campos[0] = "nombre";
-		//$campos[1] = "apellido";
-		//$campos[2] = "edad";
-		//$values[0] = "christian";
-		//$values[1] = "Bernal";
-		//$values[2] = 23;
-		
-
-		
-
-		//Update
-		//$campos = array('nombre' => "pepe" );
-		//$where = array('edad' => "30" );
-		
-		//return $this->select();	
 	}
 }
 

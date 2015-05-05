@@ -1,8 +1,14 @@
 <?php 
+if(file_exists('/libs/Controlador.php'))
+{
+	include '/libs/Controlador.php';	
+}
+else if(file_exists('../libs/Controlador.php'))
+	include '../libs/Controlador.php';	
+else if(file_exists('libs/controlador.php'))
+	include 'libs/controlador.php';
 
-include 'libs/Controlador.php';
-
-class Home extends Controlador
+class Index extends Controlador
 {
 
 	public function imprimir()
@@ -21,25 +27,28 @@ class Home extends Controlador
 		$this->cargarVistas("index");
 	}
 
-	public function registre(){
-		$nombre = $_POST['nombre'];
+	public function registro(){
+		$nombre = $_POST['name'];
+		$apellido = $_POST['lastname'];
+		$correo = $_POST['email'];
 		$username = $_POST['username'];
-		$pass = $_POST['pass'];
-		$pass2 = $_POST['pass2'];
+		$pass = $_POST['pwd'];
+		$pass2 = $_POST['pwd2'];
 
 		$usuario = $this->cargarModelo("Usuario");
 
 		//verificacion de usuarios repetidos
 		$user = $usuario->buscarUsuario($username);
-
+		
 		if($user == false)
 		{
 			//Verificacion contraseñas iguales
 			if($pass == $pass2)
 			{
-				$campos = array('nombre','username','pass');
-				$values = array($nombre, $username, $pass );			
+				$campos = array('name','lastname','email','username','pass');
+				$values = array($nombre,$apellido, $correo, $username, $pass );			
 				$usuario->setUsuario($campos, $values);			
+				return "Usuario registrado exitosamente.";
 			}	
 		}
 		else{
@@ -57,7 +66,7 @@ class Home extends Controlador
 		{
 
 			setcookie("chsm", "logedin", time()+3600, "/");
-			header("Location: /ChatSystem");
+			header("Location: /pelisyseries");
 			exit;
 		}
 		else{
@@ -68,7 +77,7 @@ class Home extends Controlador
 
 	public function logout(){
 		setcookie("chsm", "", time() - 3600, "/");
-		header("Location: /ChatSystem");
+		header("Location: /pelisyseries");
 	}
 }
 

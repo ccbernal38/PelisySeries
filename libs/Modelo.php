@@ -9,7 +9,7 @@ class Modelo{
 
 	function __construct( ){
 		$host = "localhost";
-		$db_name = "ChatSystem";
+		$db_name = "pelisyseries";
 		$usuario = "root";
 		$contraseña = "";
 

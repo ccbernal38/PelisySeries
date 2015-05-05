@@ -24,6 +24,7 @@
 
 body{	
 	background-image: url("../img/fondo.jpg");
+	background: rgba(24,24,24,0.8);
 }
 
 h2
@@ -55,11 +56,22 @@ h2
 
 #sectionSlide{
 	height: 30%;
+	padding: 2%;
+	margin-top: 10%;
+	background-color: #2F4F4F;
 }
 
 @media (min-width: 768px){ 
 	#logo{
 		width: 300px;
 	}
+	#sectionSlide{
+		margin-top: 0%;
+	}
+
 }
-	
+
+
+label.error{
+	color: red;
+}

@@ -90,6 +90,7 @@ function DetalleTv(id)
 		"language": "es"
 	},
 	function(e){
+		console.log(e);
         $('#posterTV').find("img").attr("src",tmdb.images_uri+"/w342"+e.poster_path);
         $('#tituloTV').find("h3").text(e.name);
 	}, 

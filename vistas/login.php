@@ -4,7 +4,7 @@
 		<h1>Inicio de Sesion</h1>
 		<div class="col-md-12 col-xs-12">
 			<h3>Inicia Session con tu correo</h3>
-			<div class="col-md-12">
+			<div class="col-md-12 col-xs-12">
 				<form action="" class="col-md-12" method="get" accept-charset="utf-8">
 					<div class="form-group">
 						<label for="username">Username</label>
@@ -18,7 +18,7 @@
 						<a href="">Recuperar tu contraseña</a>						
 					</div>
 					<div class="col-md-3 col-md-offset-5">
-						<input type="submit" class="btn btn-success" value="Iniciar Sesion"/>
+						<input type="submit" class="btn btn-success" style="width: 100%;" value="Iniciar Sesion"/>
 					</div>					
 				</form>
 

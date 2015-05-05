@@ -46,7 +46,8 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
             event.preventDefault();
-            link('vistas/series.php', '#contenedor');
+            //link('vistas/series.php', '#contenedor');
+            link('vistas/error/notfound.php', '#contenedor');
 
         });
 
@@ -59,7 +60,8 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
             event.preventDefault();
-            link('vistas/peliculas.php', '#contenedor');
+            //link('vistas/peliculas.php', '#contenedor');
+            link('vistas/error/notfound.php', '#contenedor');
         });
     $('#perfil').click(function(event) {
             $('#principal').removeClass("active");
@@ -70,7 +72,8 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
             event.preventDefault();
-            link('vistas/perfil.php', '#contenedor');
+            //link('vistas/perfil.php', '#contenedor');
+            link('vistas/error/notfound.php', '#contenedor');
         });
 
     $('#cerrarSesion').click(function(event) {
@@ -83,14 +86,117 @@ $(document).ready(function()
             $('#cerrarSesion').removeClass("active");
             $('#registrarse').removeClass("active");
         });
-    $('#fav1').click(function(event) {
-           try{
-           
-            
-        }catch(e){
-            console.log(e);
-        }
+    $('#principal_movil').click(function(event) {
+            $('#principal_movil').addClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+            event.preventDefault();
+            link('vistas/principal.php', '#contenedor');
         });
+
+    $('#registrarse_movil').click(function(event) {
+            event.preventDefault();
+            $('#principal_movil').removeClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').addClass("active");
+            link('vistas/registrar.php', '#contenedor');
+        });
+
+    $('#login_movil').click(function(event) {
+            
+            $('#principal_movil').removeClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').addClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+            event.preventDefault();
+            link('vistas/login.php', '#contenedor');
+        });
+
+    $('#series_movil').click(function(event) {
+            $('#principal_movil').removeClass("active");
+            $('#series_movil').addClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+            event.preventDefault();
+            //link('vistas/series.php', '#contenedor');
+            link('vistas/error/notfound.php', '#contenedor');
+
+        });
+
+    $('#peliculas_movil').click(function(event) {
+            $('#principal_movil').removeClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').addClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+            event.preventDefault();
+            //link('vistas/peliculas.php', '#contenedor');
+            link('vistas/error/notfound.php', '#contenedor');
+        });
+    $('#perfil_movil').click(function(event) {
+            $('#principal_movil').removeClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').addClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+            event.preventDefault();
+            //link('vistas/perfil.php', '#contenedor');
+             link('vistas/error/notfound.php', '#contenedor');
+        });
+
+    $('#cerrarSesion_movil').click(function(event) {
+            link("libs/facebook/app/logout.php", "#contenedor");
+            $('#principal_movil').addClass("active");
+            $('#series_movil').removeClass("active");
+            $('#peliculas_movil').removeClass("active");
+            $('#login_movil').removeClass("active");
+            $('#perfil_movil').removeClass("active");
+            $('#cerrarSesion_movil').removeClass("active");
+            $('#registrarse_movil').removeClass("active");
+        });
+
+    $("#formRegister").submit(function(e)
+    {
+        var postData = $(this).serializeArray();
+        var formURL = $(this).attr("action");
+        $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails      
+            }
+        });
+        e.preventDefault(); //STOP default action
+        e.unbind(); //unbind. to stop multiple form submit.
+    });
+ 
+    $("#formRegister").submit(); //Submit  the FORM
+    
 });
 
 function link(url, update) {
@@ -105,3 +211,4 @@ function link(url, update) {
     });
 
 }
+

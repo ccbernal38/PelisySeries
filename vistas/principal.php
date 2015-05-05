@@ -1,9 +1,11 @@
-<script src="recursos/js/principal.js" type="text/javascript"></script>
+<script src="/pelisyseries/recursos/js/principal.js" type="text/javascript"></script>
 		<div class="row top-buffer">
-			<section id="sectionSlide" class="col-md-8 col-md-offset-2 col-xs-12 ">
+		
+			
+			<section id="sectionSlide" class="jumbotron  col-md-8 col-md-offset-2 col-xs-12 ">
 				
 			</section>
-		</div>	
+
 		<div id="favoritas" class="row top-buffer">
 			<div class="col-md-10 col-md-offset-1">			
 				<div class="col-md-4 col-xs-6" id="fav1">

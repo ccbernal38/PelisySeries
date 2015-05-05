@@ -22,39 +22,44 @@ $("#formRegister").validate({
     });
 });
 </script>
-<div class="container top-buffer">
-<div class="row">
-<div class="col-md-10 col-md-offset-1">
-  <h2>Registrarse</h2>
-  <form role="form" id="formRegister" method="POST" action="../user/registration">
-    <div class="form-group">
-      <label for="name" class="label">Nombre:</label>
-      <input type="text" id="name"class="form-control" name="name" placeholder="Ingresa tu nombre">
-    </div>
-    <div class="form-group">
-      <label for="lastname" class="label">Apellido:</label>
-      <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Ingresa tu apellido">
-    </div>
-    <div class="form-group">
-      <label for="email" class="label">Correo:</label>
-      <input type="email" id="email" class="form-control" name="email" placeholder="Ingresa tu correo">
-    </div>
-    <div class="form-group">
-      <label for="username" class="label">Usuario:</label>
-      <input type="text" id="username" class="form-control" name="username" placeholder="Ingresa tu usuario">
-    </div>
-    <div class="form-group">
-      <label for="pwd" class="label">Password:</label>
-      <input type="password" id="pwd" class="form-control" name="pwd" placeholder="Ingresa tu password">
-    </div>
-     <div class="form-group">
-      <label for="pwd2" class="label">Repite la contraseña:</label>
-      <input type="password" class="form-control" name="pwd2" placeholder="Re-ingresa tu password">
-    </div>
-    <button type="submit" class="btn btn-primary col-md-2 col-md-offset-5">Registro</button>
-  </form>
+  <div id="login" class="container top-buffer bottom-buffer">
+    <section class="col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
+        <h1>Registrarse</h1>
+        <div class="col-md-12 col-xs-12">
+          <form role="form" class="col-md-12" id="formRegister" method="POST" action="index/index/registro">
+            <div class="form-group">
+              <label for="name" >Nombre:</label>
+              <input type="text" id="name"class="form-control" name="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="lastname" >Apellido:</label>
+              <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Ingresa tu apellido">
+            </div>
+            <div class="form-group">
+              <label for="email" >Correo:</label>
+              <input type="email" id="email" class="form-control" name="email" placeholder="Ingresa tu correo">
+            </div>
+            <div class="form-group">
+              <label for="username" >Usuario:</label>
+              <input type="text" id="username" class="form-control" name="username" placeholder="Ingresa tu usuario">
+            </div>
+            <div class="form-group">
+              <label for="pwd" >Password:</label>
+              <input type="password" id="pwd" class="form-control" name="pwd" placeholder="Ingresa tu password">
+            </div>
+             <div class="form-group">
+              <label for="pwd2" >Repite la contraseña:</label>
+              <input type="password" class="form-control" name="pwd2" placeholder="Re-ingresa tu password">
+            </div>
+            <div class="col-md-3 col-md-offset-9">
+            <input type="submit" class="btn btn-success" style="width: 100%;" value="Registro"/>
+          </div>  
+          </form>
+          <div id="resutl">
+            
+          </div>
+      </div>
+    </section>
   </div>
-  </div>
-</div>
 </body>
 </html>

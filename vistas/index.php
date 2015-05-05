@@ -7,6 +7,6 @@
 	<div id="contenedor" class="container">
 
 <?php 
-	include 'principal.php';
+	include 'vistas/principal.php';
 ?>
 
