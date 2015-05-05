@@ -79,7 +79,7 @@ function changeImage()
 }
 
 var intervalo =  setInterval(changeImage, 4000);
-
+var season;
 function DetalleTv(id)
 { 
 	event.preventDefault();
@@ -90,8 +90,56 @@ function DetalleTv(id)
 		"language": "es"
 	},
 	function(e){
+		
         $('#posterTV').find("img").attr("src",tmdb.images_uri+"/w342"+e.poster_path);
-        $('#tituloTV').find("h3").text(e.name);
+        $('#tituloTV').find("h2").text(e.name);
+       // console.log(e);
+        for (var i = 0 ; i <e.seasons.length ; i++) {
+
+        	
+        	
+
+        	$('#seasons').append($('<a></a>').addClass("col-xs-offset-3 col-xs-9").attr("href","").append('Temporada'+(i+1)));
+        	
+        	$('#accordion').append($('<div></div>').addClass("panel panel-default").attr("id","default"+i).append($('<div></div>').addClass('panel-heading')
+        	.append($("<h4></h4>").addClass("panel-title").append($("<a></a>").attr("data-toggle","collapse").attr("data-parent","#accordion").
+        	attr("href","#collapse"+i).append("Temporada"+" "+(i+1)))
+        			)).append($("<div></div>").attr("id","collapse"+i).addClass("panel-collapse collapse in")
+        	.append($("<div></div>").addClass("panel-body"))
+        	));
+        	detalleTemporada(id,e.seasons[i].season_number,i);
+        }
+        $('#sipnosisTV').find("p").append(e.overview);
+
+       
+
+	}, 
+	function(e){
+		console.log("Error: "+e)
+	}
+	);
+}
+
+function detalleTemporada(Tvid,SeasonNumber,num)
+{
+	tmdb.call("/tv/"+Tvid+"/season/"+SeasonNumber, 
+	{
+		"language": "es"
+	},
+	function(e){
+		console.log(e);
+		$('#collapse'+num).find("div").append(e.overview);
+		$('#collapse'+num).append($('<table></table>').addClass('table').attr('id','table'+num).append($('<tr></tr>').
+			append($('<th></th>').append('Nombre')).append($('<th></th>').append('Fecha lanzamiento'))
+			.append($('<th></th>').append('Puntuación promedio'))));
+
+		for (var i = 0; i < e.episodes.length; i++) {
+			$('#table'+num).append($('<tr></tr>').
+			append($('<td></td>').append(e.episodes[i].name)).append($('<td></td>').append(e.episodes[i].air_date))
+			.append($('<td></td>').append(e.episodes[i].vote_average)));
+
+		}
+
 	}, 
 	function(e){
 		console.log("Error: "+e)
