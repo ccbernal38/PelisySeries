@@ -24,8 +24,9 @@ class Usuario extends Modelo
 		//insert
 		$condicion = array('username' =>"'$username'");
 		$result = $this->select(null, $condicion);
-		foreach ($result as $row) {
-			if($username == $row[2]){
+		$resultadosConsulta = $result->fetchAll();
+		foreach ($resultadosConsulta as $row) {
+			if($username == $row['username']){
 				return true;
 			}
 		}
@@ -45,13 +46,15 @@ class Usuario extends Modelo
 	function autenticacion($username, $password)
 	{
 		$where = array('username' => "'$username'" , 'pass' => "'$password'" );
-		return $this->select(null,$where);
+		$PDO = $this->select(null,$where);
+		$resultado = $PDO->fetchAll();
+		return $resultado;
 	}
 
 	function getUsuarios()
 	{
 		//select
-		return $this->select();
+		return $this->select()->fetchAll();
 	}
 }
 

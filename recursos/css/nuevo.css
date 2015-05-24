@@ -71,7 +71,47 @@ h2
 
 }
 
+.marginbottom{
+	margin-bottom: 0px;
+}
 
 label.error{
 	color: red;
+}
+
+.padding-width{
+	padding-left: 0;
+	padding-right: 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.absoluteContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+	color: #FFF;
+	background: rgba(54,54,54, 0.8);
+	padding: 2%;
+	border-radius: 5px;
+}
+
+.shadow_movie{
+	color: blue;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: 0px 0px 5px 4px #006699;
+	-webkit-box-shadow: 0px 0px 5px 4px #006699;
+}
+
+.shadow_tv{
+	color: green;
+	border-width: 2px;
+	border-style: solid;
+	box-shadow: 0px 0px 5px 4px #22a309;
+	-webkit-box-shadow: 0px 0px 5px 4px #22a309;
 }

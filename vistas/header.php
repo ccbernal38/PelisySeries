@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="/pelisyseries/recursos/css/bootstrap.css">
 	<link rel="stylesheet" href="/pelisyseries/recursos/css/nuevo.css">
 	<script src="/pelisyseries/recursos/js/tmdb.js"></script>
-	<script src="/pelisyseries/recursos/js/basic.js"></script>
-	<script src="/pelisyseries/recursos/js/spa.js" async></script>
+	<script src="/pelisyseries/recursos/js/spa.js" async></script>	
 	<script src="/pelisyseries/recursos/js/jqueryvalidation.js"></script>
+	<script src="/pelisyseries/recursos/js/basic.js"></script>
 	
 	<?php 
 		session_start();
@@ -23,7 +23,7 @@
 		<div class = "navbar navbar-default navbar-fixed-top navbar-inverse">
 			<div class = "container">
 			<div class="navbar-header">
-					<button class = "navbar-toggle navbar-left" data-toggle = "collapse" data-target = "#collapsed">
+					<button id="button_menu" class = "navbar-toggle navbar-left" data-toggle = "collapse" data-target = "#collapsed">
 						<span class = "icon-bar"></span>
 						<span class = "icon-bar"></span>
 						<span class = "icon-bar"></span>

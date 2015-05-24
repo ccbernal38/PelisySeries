@@ -2,7 +2,7 @@
 	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
 			
-			<div id="posterTV" class="portada col-xs-12">
+			<div id="posterTV" class="portada col-xs-8 col-xs-offset-2">
 				<a>
 					<img  src="recursos/img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
 				</a>
@@ -33,13 +33,12 @@
 					<p></p>
 				</div>
 			</div>
-			
+			<div class="panel-group" id="accordion1">
+			</div> 
 			
 			<h2>Capitulos</h2>
 			<div class="panel-group" id="accordion">
-				
-						
-						</div> 
+			</div> 
 					</article>
 
 				</section>

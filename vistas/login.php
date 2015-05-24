@@ -3,22 +3,22 @@
 	<section class="col-xs-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2">
 		<h1>Inicio de Sesion</h1>
 		<div class="col-md-12 col-xs-12">
-			<h3>Inicia Session con tu correo</h3>
+			<h3>Inicia Sesion con tu correo</h3>
 			<div class="col-md-12 col-xs-12">
-				<form action="" class="col-md-12" method="get" accept-charset="utf-8">
+				<form action="index/login" id="formid" class="col-md-12" method="POST" accept-charset="utf-8">
 					<div class="form-group">
 						<label for="username">Username</label>
-						<input id="username" class="form-control" placeholder="Ingrese su username" name="username"/>	
+						<input id="username_login" class="form-control" placeholder="Ingrese su username" name="username"/>	
 					</div>
 					<div class="form-group top-buffer">
 						<label for="password">Contraseña</label>
-						<input id="password" type="password" class="form-control" placeholder="Ingrese su contraseña" name="pass">
+						<input id="password_login" type="password" class="form-control" placeholder="Ingrese su contraseña" name="pass">
 					</div>
 					<div class="col-md-4">
 						<a href="">Recuperar tu contraseña</a>						
 					</div>
 					<div class="col-md-3 col-md-offset-5">
-						<input type="submit" class="btn btn-success" style="width: 100%;" value="Iniciar Sesion"/>
+						<input type="submit" id="btn_login" class="btn btn-success" style="width: 100%;" value="Iniciar Sesion"/>
 					</div>					
 				</form>
 

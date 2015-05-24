@@ -101,6 +101,7 @@ class Modelo{
 			$query .= $values;
 			
 		}
+		
 		return $this->query($query);
 	}
 
