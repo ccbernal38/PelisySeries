@@ -22,10 +22,19 @@
 			</div>
 		</div>
 	</aside>
-	<article id="content_movie" class="col-md-9 col-lg-9">
-		<nav>
-		pagina:
-			<ul id="pagination_movie" class="pagination"></ul>
+	<article class="col-md-9 col-lg-9">
+		<nav class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
+			<ul id="pagination_movie" class="pagination">
+				<li><a>Paginas:</a></li>
+			</ul>
+		</nav>
+		<div id="content_movie">
+			
+		</div>
+		<nav class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1">
+			<ul id="pagination_movie2" class="pagination">
+				<li><a>Paginas:</a> </li>
+			</ul>
 		</nav>
 	</article>
 </div>

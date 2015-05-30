@@ -2,7 +2,7 @@
 	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
 			
-			<div id="posterTV" class="portada col-xs-8 col-xs-offset-2">
+			<div id="posterTV" class="portada">
 				<a>
 					<img  src="recursos/img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
 				</a>

@@ -78,6 +78,7 @@ function principal()
         all_tv_pages = e.total_pages;
         j = 1;
         for (var i = 1; j < 9; i++) {
+           
             if (e.results[i].backdrop_path != null) {
                 $("#fav" + j).find("a").attr("id", e.results[i].id);
                 $("#fav" + j).find("a").attr("href", "");
@@ -94,6 +95,10 @@ function principal()
 //------------------------
         j = 1;
         for (var i = 0; j < 4; i++) {
+            if (i == 0) {
+                most_view_tv = e.results[i];
+                console.log(most_view_tv);
+            }
             $("#serie" + j).find("a").attr("id", e.results[i].id);
             $("#serie" + j).find("a").attr("onclick", "detalleTv" + "(this.id)");
             $("#serie" + j).find("a").attr("href", "");

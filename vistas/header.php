@@ -28,7 +28,7 @@
 						<span class = "icon-bar"></span>
 						<span class = "icon-bar"></span>
 					</button>
-					<a id="logo" href = "#" class = "navbar-brand">
+					<a id="logo" href = "" class = "navbar-brand">
 						<img  src="/pelisyseries//pelisyseries/recursos/img/logo.png" class="media-heading img-responsive" alt="PelisySeries">
 					</a>
 				</div>
