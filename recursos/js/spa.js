@@ -276,7 +276,7 @@ $(document).ready(function(event) {
             for (var i = 0; i < generos.length; i++) {
                 $('#catSeries').append($("<a></a>").attr("id", generos[i].id).attr("href", "").addClass("list-group-item").text(generos[i].name));
             };
-            $('#catSeries a').attr("onclick", 'seriesByGenres(this.id.' + page_tv + ')');
+            $('#catSeries a').attr("onclick", 'seriesByGenres(this.id,' + page_tv + ')');
             pages = e.total_pages;
             $('#serieTop a').attr("id", most_view_tv.id);
             $('#serieTop a').attr("href", "");
