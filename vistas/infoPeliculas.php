@@ -12,12 +12,6 @@
 					
 				</div>
 
-				<div id="lista col-xs-12" >
-					<a  id="favoritas" class="btn-danger col-xs-12" href="javascript:void(0);">
-						<i class="btn-danger glyphicon glyphicon-list"></i>
-						Añadir a mi lista
-					</a>
-				</div>
 				
 			</div>
 			

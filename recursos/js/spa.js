@@ -99,6 +99,7 @@ $(document).ready(function(event) {
             url: 'home/listarSeriesFavoritas',
             dataType: 'JSON',
             success: function(series){
+                console.log(series);
                 favoriteSeries(series);
                 
 
