@@ -30,31 +30,12 @@
 								<div id='slider'class="carousel-inner">
 									<div class="item active">
 										<div id='activeRow' class="row">
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
+							
 										</div>
 										<!--/row-->
 									</div>
 									<!--/item-->
-									<div class="item">
-										<div class="row">
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-											<div class="col-sm-3"><a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
-											</div>
-										</div>
-										<!--/row-->
-									</div>
+									
 									<!--/item-->
 
 									<!--/item-->

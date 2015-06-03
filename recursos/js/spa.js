@@ -99,8 +99,10 @@ $(document).ready(function(event) {
             url: 'home/listarSeriesFavoritas',
             dataType: 'JSON',
             success: function(series){
-                link('vistas/listaFavoritos.php,#contenedor');
                 favoriteSeries(series);
+                
+
+                
             }
         });
         
