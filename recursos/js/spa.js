@@ -98,8 +98,9 @@ $(document).ready(function(event) {
             type: 'POST',
             url: 'home/listarSeriesFavoritas',
             dataType: 'JSON',
-            succes: function(respuesta){
-                alert('hola');
+            success: function(series){
+                link('vistas/listaFavoritos.php,#contenedor');
+                favoriteSeries(series);
             }
         });
         return false;
@@ -233,7 +234,7 @@ $(document).ready(function(event) {
             type: 'POST',
             url: 'home/agregarSerieFavorita',
             data: "idSerie="+idserie,
-            succes: function(msg){
+            success: function(msg){
                 
             }
         });

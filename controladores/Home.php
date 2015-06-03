@@ -104,7 +104,7 @@ class Home extends Controlador {
 
          if($respuesta!=null)
          {
-            for ($i=0; $i < $respuesta->lenght(); $i++) { 
+            for ($i=0; $i < count($respuesta); $i++) { 
                 $series[$i]['id'] = $respuesta[$i]['movies_idSeries'];
             }
              
