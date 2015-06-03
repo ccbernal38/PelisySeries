@@ -103,7 +103,7 @@ $(document).ready(function(event) {
                 favoriteSeries(series);
             }
         });
-        return false;
+        
     });
 
     $('#principal_movil').click(function(event) {

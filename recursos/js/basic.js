@@ -210,12 +210,13 @@ function favoriteSeries(series)
             $('#activeRow').append($('<div></div>').addClass('col-sm-3 img-responsive').append($('<a></a>').addClass('thumbnail')
 
                 .append($('<img></img>').addClass('img-responsive').attr('src',tmdb.images_uri + "/w300" + e.poster_path))
-                ).attr('onClick','detalleTv(series[i].id)'))
+                ).attr('onClick','detalleTv(series[i].id)'));
 
-            <a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
+            
         }
        
 
+    });
+
     }
-};
 }
