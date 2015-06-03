@@ -37,25 +37,52 @@
 						<li id="principal" class = "active"><a href = "">Principal</a></li>
 						<li id="peliculas"><a  href = "">Peliculas</a></li>
 						<li id="series" ><a href = "">Series</a></li>
-						<?php if (!isset($_SESSION['facebook'])): ?>
+						<?php if (!isset($_SESSION['facebook'] ) && !isset($_COOKIE["user"]))
+						{
+							
+							?>
 						<li id="login"><a href="">Login</a></li>
 						<li id="registrarse"><a href="">Registrarse</a></li>
-						<?php else: ?>
-						<li id="usuario"><a href="" class="btn-success" title=""><?php echo $facebook_user->getName();?></a></li>
-						<li id="cerrarSesion"><a href="">Cerrar sesión</a></li>
-						<?php endif; ?>
+						<?php } else
+						{
+							?><li id="usuario"><a href="" class="btn-success" title="">
+							<?php if (isset($_SESSION['facebook'] ))
+						{ 
+							echo $facebook_user->getName();
+						}
+						else
+						{
+							echo $_COOKIE["user"];
+						} ?></a></li>
+							
+							 <li id="cerrarSesion"><a href="">Cerrar sesión</a></li>
+						<?php } ?>
+						
+						
 					</ul>
 					<ul class = "nav navbar-nav navbar-right visible-sm visible-xs">
 						<li id="principal_movil" class = "active"><a href = "#">Principal</a></li>
 						<li id="peliculas_movil"><a  href = "">Peliculas</a></li>
 						<li id="series_movil" ><a href = "">Series</a></li>
-						<?php if (!isset($_SESSION['facebook'])): ?>
+						<?php if (!isset($_SESSION['facebook']) && !isset($_COOKIE["user"]))
+						{ 
+							?>
 						<li id="login_movil"><a href="">Login</a></li>
 						<li id="registrarse_movil"><a href="">Registrarse</a></li>
-						<?php else: ?>
-						<li id="usuario_movil"><a href="" class="btn-success" title=""><?php echo $facebook_user->getName();?></a></li>
+						<?php } 
+						else
+							{ ?>
+						<li id="usuario_movil"><a href="" class="btn-success" title=""
+						><?php if (isset($_SESSION['facebook'] ))
+						{ 
+							echo $facebook_user->getName();
+						}
+						else
+						{
+							echo $_COOKIE["user"];
+							} ?></a></li>
 						<li id="cerrarSesion_movil"><a href="">Cerrar sesión</a></li>
-						<?php endif; ?>
+						<?php } ?>
 					</ul>
 				</div>
 			</div>

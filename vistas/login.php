@@ -5,7 +5,7 @@
 		<div class="col-md-12 col-xs-12">
 			<h3>Inicia Sesion con tu correo</h3>
 			<div class="col-md-12 col-xs-12">
-				<form action="index/login" id="formid" class="col-md-12" method="POST" accept-charset="utf-8">
+				<form action="" id="formid" class="col-md-12" method="POST" accept-charset="utf-8">
 					<div class="form-group">
 						<label for="username">Username</label>
 						<input id="username_login" class="form-control" placeholder="Ingrese su username" name="username"/>	
@@ -18,7 +18,7 @@
 						<a href="">Recuperar tu contraseña</a>						
 					</div>
 					<div class="col-md-3 col-md-offset-5">
-						<input type="submit" id="btn_login" class="btn btn-success" style="width: 100%;" value="Iniciar Sesion"/>
+						<input type="button" id="btn_login" class="btn btn-success" style="width: 100%;" value="Iniciar Sesion">
 					</div>					
 				</form>
 

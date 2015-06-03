@@ -29,9 +29,10 @@ function detalleTv(id) {
             }
             console.log(e);
             $('#sipnosisTV').find("p").append(e.overview);
+            $('#idSerie').val(id);
         }, 100);
     }, function(e) {
-        console.log("Error: " + e)
+        console.log("Error: " + e);
     });
     return false;
 }
@@ -47,8 +48,9 @@ function detallePelicula(id) {
         $('#tituloMovie').find("h2").text(e.title + " (" + e.original_title + ")");
         // console.log(e);
         $('#sipnosisMovie').find("p").append(e.overview);
+        $('#idPelicula').val(id);
     }, function(e) {
-        console.log("Error: " + e)
+        console.log("Error: " + e);
     });
     tmdb.call("/movie/" + id + "/credits", {}, function(e) {
         console.log("elenco");
@@ -58,7 +60,7 @@ function detallePelicula(id) {
             $('#collapseundefined').find("div").append($("<p></p>").append("<a>" + e.cast[i].name + "</a>").append().append(" como " + e.cast[i].character));
         }
     }, function(e) {
-        console.log("Error: " + e)
+        console.log("Error: " + e);
     });
     return false;
 }
@@ -193,4 +195,27 @@ function seriesByGenres(genre, page_tv) {
         });
     }
     
+}
+
+function favoriteSeries(series)
+{
+    event.preventDefault();
+    for (var i = 0 ;  i >series.length; i++) {
+        tmdb.call("/tv/" + series[i].id, {
+        "language": "es"
+    }, function(e) {
+
+        if(i<4)
+        {
+            $('#activeRow').append($('<div></div>').addClass('col-sm-3 img-responsive').append($('<a></a>').addClass('thumbnail')
+
+                .append($('<img></img>').addClass('img-responsive').attr('src',tmdb.images_uri + "/w300" + e.poster_path))
+                ).attr('onClick','detalleTv(series[i].id)'))
+
+            <a href="#x" class="thumbnail"><img src="<?php echo base_url(); ?>img/prueba.jpg" alt="Image" class="img-responsive"></a>
+        }
+       
+
+    }
+};
 }

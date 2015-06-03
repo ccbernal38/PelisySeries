@@ -1,7 +1,7 @@
 <div class="container top-buffer">
 	<section class="main row top-buffer">
 		<aside class="col-xs-12 col-sm-4 col-md-3">
-			
+			<input type="hidden" id="idSerie" name="id">
 			<div id="posterTV" class="portada">
 				<a>
 					<img  src="recursos/img/prueba.jpg" class="media-heading img-responsive" alt="PelisySeries">
@@ -13,7 +13,7 @@
 				</div>
 
 				<div id="lista col-xs-12" >
-					<a  class="btn-danger col-xs-12" href="javascript:void(0);">
+					<a  id="favorito" class="btn-danger col-xs-12" href="javascript:void(0);">
 						<i class="btn-danger glyphicon glyphicon-list"></i>
 						Añadir a mi lista
 					</a>

@@ -57,16 +57,21 @@ class Home extends Controlador {
         
         $usuario = $this->cargarModelo("usuario");
         
-        $respuesta = $usuario->autenticar($username, $pass);
+        $respuesta = $usuario->autenticacion($username, $pass);
         
-        if ($respuesta != null && $respuesta->rowcount() > 0) {
-            setcookie("user", "localLogin", time() + 3600, "/");
+        if ($respuesta != null) {
+
+            setcookie("user", $respuesta[0]['username'], time() + 3600, "/");
+            setcookie("id", $respuesta[0]['idUser'], time() + 3600, "/");
+            //Datos del usuario logueado
             $envio['nombre'] = $respuesta[0]['name'];
             $envio['apelido'] = $respuesta[0]['lastname'];
             $envio['email'] = $respuesta[0]['email'];
             $envio['username'] = $respuesta[0]['username'];
-            echo json_decode($envio);
-            $this->cargarVistas("index");            
+            echo json_encode($envio);
+           
+            
+          //$this->cargarVistas("index");            
 
         } 
         else {
@@ -75,8 +80,38 @@ class Home extends Controlador {
     }
     
     public function logout() {
-        setcookie("chsm", "", time() - 3600, "/");
+        setcookie("user", "", time() - 3600, "/");
         header("Location: /pelisyseries");
+        setcookie("id", "", time() - 3600, "/");
+        header("Location: /pelisyseries");
+    }
+
+    public function agregarSerieFavorita()
+    {
+        $idSerie = $_POST['idSerie'];
+        $idUser=$_COOKIE["id"];
+
+        $usuario = $this->cargarModelo("Usuario");
+        $respuesta = $usuario->agregarSerieFavorita($idUser,$idSerie);
+        return $respuesta;
+    }
+
+    public function listarSeriesFavoritas()
+    {
+         $idUser=$_COOKIE["id"];
+         $usuario = $this->cargarModelo("Usuario");
+         $respuesta = $usuario->listarSeriesFavoritas($idUser);
+
+         if($respuesta!=null)
+         {
+            for ($i=0; $i < $respuesta->lenght(); $i++) { 
+                $series[$i]['id'] = $respuesta[$i]['movies_idSeries'];
+            }
+             
+             header('Content-type: application/json');
+             echo json_encode($series);
+         }
+         
     }
 }
 ?>

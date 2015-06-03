@@ -85,18 +85,26 @@ $(document).ready(function(event) {
         link('vistas/peliculas.php', '#contenedor');
         categoriasPeliculas();
     });
-    $('#perfil').click(function(event) {
-        $('#principal').removeClass("active");
+
+    $('#usuario').click(function(event)
+    {
+        event.preventDefault();
+         $('#principal').removeClass("active");
         $('#series').removeClass("active");
         $('#peliculas').removeClass("active");
-        $('#login').removeClass("active");
-        $('#perfil').addClass("active");
         $('#cerrarSesion').removeClass("active");
-        $('#registrarse').removeClass("active");
-        event.preventDefault();
-        //link('vistas/perfil.php', '#contenedor');
-        link('vistas/error/notfound.php', '#contenedor');
+        
+        $.ajax({
+            type: 'POST',
+            url: 'home/listarSeriesFavoritas',
+            dataType: 'JSON',
+            succes: function(respuesta){
+                alert('hola');
+            }
+        });
+        return false;
     });
+
     $('#principal_movil').click(function(event) {
         $('#principal_movil').addClass("active");
         $('#series_movil').removeClass("active");
@@ -218,6 +226,43 @@ $(document).ready(function(event) {
         categoriasSeries();
         return false;
     });
+    $('#contenedor').on('click', '#favorito', function(event){
+        event.preventDefault();
+        var idserie = $('#idSerie').val();
+        $.ajax({
+            type: 'POST',
+            url: 'home/agregarSerieFavorita',
+            data: "idSerie="+idserie,
+            succes: function(msg){
+                
+            }
+        });
+
+    });
+    
+    $('#contenedor').on('click', '#btn_login', function(event){
+        event.preventDefault();
+        $.ajax({
+            type: 'POST',
+            data: {
+                username: $('#username_login').val(),
+                pass: $('#password_login').val(),
+            },
+            url: 'home/login',
+            dataType: 'JSON',
+            //beforeSend: function() {
+              //  $('#result_login').html("Un momento por favor");
+            //},
+            success: function(response) {
+
+             link('vistas/index.php', '#contenedor');
+            }
+            //error: function(msg) {}
+        });
+
+        return false;
+    });
+    
 
     function categoriasPeliculas() {
         //Cargar categorias, 
@@ -349,25 +394,7 @@ $(document).ready(function(event) {
 
     function actualizarInicioSesion() {
         setTimeout(function() {
-            $('#btn_login').click(function() {
-                $.ajax({
-                    type: 'POST',
-                    data: {
-                        username: $('#username_login').val(),
-                        pass: $('#password_login').val(),
-                    },
-                    url: 'home/login',
-                    dataType: 'JSON',
-                    beforeSend: function() {
-                        $('#result_login').html("Un momento por favor");
-                    },
-                    success: function(response) {
-                        console.log(response);
-                    },
-                    error: function(msg) {}
-                });
-                return false;
-            });
+            
         }, 500);
     }
 });
