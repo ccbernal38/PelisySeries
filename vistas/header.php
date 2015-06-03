@@ -55,7 +55,7 @@
 							echo $_COOKIE["user"];
 						} ?></a></li>
 							
-							 <li id="cerrarSesion"><a href="">Cerrar sesión</a></li>
+							 <li id="cerrarSesion"><a href="home/logout">Cerrar sesión</a></li>
 						<?php } ?>
 						
 						

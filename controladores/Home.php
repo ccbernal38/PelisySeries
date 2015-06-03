@@ -81,7 +81,6 @@ class Home extends Controlador {
     
     public function logout() {
         setcookie("user", "", time() - 3600, "/");
-        header("Location: /pelisyseries");
         setcookie("id", "", time() - 3600, "/");
         header("Location: /pelisyseries");
     }
