@@ -204,37 +204,18 @@ function favoriteSeries(series)
     link('vistas/listaFavoritos.php','#contenedor');
     var aux=0;
     for (var i = 0 ;  i <series.length; i++) {
-        console.log(i);
         tmdb.call("/tv/" + series[i].id, {
         "language": "es"
     }, function(e) {
-    
-       if(i<4)
-        {
+        console.log(i);
+       
             $('#activeRow').append($('<div></div>').addClass('col-sm-3').append($('<a></a>').addClass('thumbnail')
 
                 .append($('<img id='+i+'>').addClass('img-responsive').attr('src',tmdb.images_uri + "/w780" + e.poster_path))
                 ).attr('onClick','detalleTv('+e.id+')'));
 
             
-        }
-        else if(i%4==0)
-        {   aux=i;
-           $('#slider').append( $('<div></div>').addClass('item').append($('<div></div>').addClass('row').attr('id', 'row' + aux))
-
-            .append($('<div></div>').addClass('col-sm-3').append($('<a></a>').addClass('thumbnail')
-
-                .append($('<img id='+i+'>').addClass('img-responsive').attr('src',tmdb.images_uri + "/w780" + e.poster_path))
-                ).attr('onClick','detalleTv('+e.id+')'))
-            );
-        }
-        else
-        {
-            $('#row'+aux).append($('<div></div>').addClass('col-sm-3').append($('<a></a>').addClass('thumbnail')
-
-                .append($('<img id='+i+'>').addClass('img-responsive').attr('src',tmdb.images_uri + "/w780" + e.poster_path))
-                ).attr('onClick','detalleTv('+e.id+')'));
-        }
+        
                                         
         
 

@@ -30,12 +30,12 @@
 								<div id='slider'class="carousel-inner">
 									<div class="item active">
 										<div id='activeRow' class="row">
-							
+											
 										</div>
 										<!--/row-->
 									</div>
 									<!--/item-->
-									
+
 									<!--/item-->
 
 									<!--/item-->
